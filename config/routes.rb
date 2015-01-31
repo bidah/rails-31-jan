@@ -1,4 +1,18 @@
 Rails.application.routes.draw do
+  # get 'producers/index'
+
+  # get 'producers/create'
+
+  # get 'producers/new'
+
+  # get 'producers/edit'
+
+  # get 'producers/destroy'
+
+  # get 'producers/update'
+
+  resources :producers
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
