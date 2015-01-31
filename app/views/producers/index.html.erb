@@ -1,8 +1,10 @@
-<h1>Producers#index</h1>
-<p>Here I will show all producers</p>
+<div class="col-md-12">
+  <h1>Producers#index</h1>
+  <p>Here I will show all producers</p>
 
 
-<% @producers.each do |producer| %>
-  <p>name: <%= producer.name %></p>
-  <p>description: <%= producer.description %></p>
-<% end %>
+  <% @producers.each do |producer| %>
+    <p>name: <%= producer.name %></p>
+    <p>description: <%= producer.description %></p>
+  <% end %>
+</div>
