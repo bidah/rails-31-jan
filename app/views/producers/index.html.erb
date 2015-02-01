@@ -2,9 +2,12 @@
   <h1>Producers#index</h1>
   <p>Here I will show all producers</p>
 
-
+  <ol>
   <% @producers.each do |producer| %>
+    <li>
     <p>name: <%= producer.name %></p>
     <p>description: <%= producer.description %></p>
+    </li>
   <% end %>
+  </ol>
 </div>

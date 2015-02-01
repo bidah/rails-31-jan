@@ -1,2 +1,17 @@
 <h1>Producers#new</h1>
 <p>Find me in app/views/producers/new.html.erb</p>
+
+
+<% if @producer.errors.any? %>
+  <div class="alert alert-warning" role="alert">
+    <p>we got an error sir!</p>
+    <% if @producer.errors[:name].present? %>
+      You need to put in a name
+    <% end %>
+  </div>
+<% end %>
+
+<%= form_for(@producer) do |f| %>
+  <%= f.text_field :name %>
+  <%= f.submit %>
+<% end %>

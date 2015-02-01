@@ -9,6 +9,10 @@
 <body>
   <div class="container">
     <%= yield %>
+
+<br>
+    <%= link_to "home", producers_path, class: "btn btn-default" %> - 
+    <%= link_to "new producer", new_producer_path, class: "btn btn-default" %>
   </div>
 </body>
 </html>
