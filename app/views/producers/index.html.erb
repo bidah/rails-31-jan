@@ -5,8 +5,7 @@
   <ol>
   <% @producers.each do |producer| %>
     <li>
-    <p>name: <%= producer.name %></p>
-    <p>description: <%= producer.description %></p>
+      <%= link_to "#{producer.name}: #{producer.description}", producer_path(producer) %>
     </li>
   <% end %>
   </ol>

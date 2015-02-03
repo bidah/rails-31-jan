@@ -10,9 +10,15 @@
   <div class="container">
     <%= yield %>
 
-<br>
-    <%= link_to "home", producers_path, class: "btn btn-default" %> - 
-    <%= link_to "new producer", new_producer_path, class: "btn btn-default" %>
+    <br>
+    <% if params[:action] == "index" %>
+      <%= link_to "new producer", new_producer_path, class: "btn btn-default" %>
+    <% elsif params[:action] == "new" %>
+      <%= link_to "home", producers_path, class: "btn btn-default" %>
+    <% else %>
+      <%= link_to "home", producers_path, class: "btn btn-default" %>
+      <%= link_to "new producer", new_producer_path, class: "btn btn-default" %>
+    <% end %>
   </div>
 </body>
 </html>
