@@ -1,5 +1,7 @@
 <h1> Showing producer </h1>
 
-name:<%= @producer.name %>
+name: <%= @producer.name.capitalize %><br>
+description: <%= @producer.description.capitalize %><br>
+priority: <%= @producer.priority %>
 
 <%= link_to "edit", edit_producer_path(@producer) %>

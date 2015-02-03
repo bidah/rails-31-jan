@@ -2,7 +2,7 @@
 <p>Find me in app/views/producers/new.html.erb</p>
 
 
-<% if @producer.errors.any? %>
+  <% if @producer.errors.any? %>
   <div class="alert alert-warning" role="alert">
     <p>we got an error sir!</p>
     <% if @producer.errors[:name].present? %>
@@ -11,7 +11,4 @@
   </div>
 <% end %>
 
-<%= form_for(@producer) do |f| %>
-  <%= f.text_field :name %>
-  <%= f.submit %>
-<% end %>
+<%= render 'form' %>

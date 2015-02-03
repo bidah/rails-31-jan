@@ -35,6 +35,6 @@ class ProducersController < ApplicationController
 
   private
   def producer_params
-    params.require(:producer).permit(:name)
+    params.require(:producer).permit(:name, :description, :priority)
   end
 end

@@ -1,3 +1,3 @@
 class Producer < ActiveRecord::Base
-  validates :name, presence: true
+  validates :name, :description, :priority, presence: true
 end

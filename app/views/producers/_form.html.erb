@@ -8,6 +8,8 @@
 <% end %>
 
 <%= form_for(@producer) do |f| %>
-  <%= f.text_field :name %>
-  <%= f.submit %>
+  <%= f.text_field :name, placeholder: 'name' %>
+  <br><%= f.text_field :description, placeholder: 'description' %>
+  <br><%= f.number_field :priority, placeholder: 'priority' %>
+  <br><%= f.submit %>
 <% end %>
